@@ -9,10 +9,11 @@ import UIKit
 
 final class InputField: UIView {
     
+    //MARK: - IBOutlet
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     
-    
+    //MARK: - Life cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -23,12 +24,14 @@ final class InputField: UIView {
         setupUI()
     }
     
+    //MARK: - Funcs
     private func setupUI() {
         xibSetup()
         textField.delegate = self
     }
 }
 
+//MARK: - UITextFieldDelegate
 extension InputField: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         errorLabel.isHidden = true

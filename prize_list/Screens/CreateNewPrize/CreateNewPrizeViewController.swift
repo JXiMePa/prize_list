@@ -13,6 +13,7 @@ protocol CreateNewPrizeProtocol: class {
 
 final class CreateNewPrizeViewController: UIViewController {
     
+    //MARK: - IBOutlets
     @IBOutlet private weak var nameField: InputField!
     @IBOutlet private weak var priceField: InputField!
     
@@ -34,7 +35,7 @@ final class CreateNewPrizeViewController: UIViewController {
         priceField.textField.applyPriceStyle()
     }
     
-    @IBAction func createButtonAction(_ sender: UIButton) {
+    @IBAction private func createButtonAction(_ sender: UIButton) {
         nameField.errorLabel.isHidden = nameField.textField.text?.isEmptySpace == false
         priceField.errorLabel.isHidden = priceField.textField.text?.isEmptySpace == false
         let newPrize = Prize()

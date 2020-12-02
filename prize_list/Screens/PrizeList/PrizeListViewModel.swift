@@ -7,18 +7,17 @@
 
 import Foundation
 
-class PrizeListViewModel {
+final class PrizeListViewModel {
     
     //MARK: Property
     private var selectedIndex = 0
+    var purchaseLimit = 100.0
     var dataArray: [Prize] {
-        return RealmHelper.getObjects()
+        RealmHelper.getObjects()
     }
-    
     private var selectedPrize: [Prize] {
         dataArray.filter {$0.selectedIndex != 0}
     }
-    
     private var totalPrice: Double {
         selectedPrize.map {$0.cost}.reduce(0, +)
     }
@@ -33,15 +32,15 @@ class PrizeListViewModel {
         newPrize.selectedIndex = isSelected ? Int(Date().timeIntervalSince1970) : Int.zero
         RealmHelper.saveObject(object: newPrize)
     }
-
-    func getTotalPrice(_ limit: Double) -> String {
+    
+    func getTotalPrice() -> String {
         guard !selectedPrize.isEmpty else {
             return Double.zero.toDecimalPrice()
         }
         let sortedPrizes = dataArray.sorted { $0.selectedIndex < $1.selectedIndex }
         
         for prize in sortedPrizes {
-            if totalPrice > limit {
+            if totalPrice > purchaseLimit {
                 updateCheckmark(prize: prize, isSelected: false)
             } else {
                 break
@@ -49,5 +48,5 @@ class PrizeListViewModel {
         }
         return totalPrice.toDecimalPrice()
     }
-
+    
 }

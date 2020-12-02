@@ -117,6 +117,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6B164A7F25780AA700BB3377 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6B637FDB2577F6C400984599 /* RealmHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		6B31D0392577AC1800FEEE68 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +183,7 @@
 				6BDA386E2577931E00AE21A1 /* LaunchScreen.storyboard */,
 				6BDA38712577931E00AE21A1 /* Info.plist */,
 				6BDA38BE25779A6900AE21A1 /* Extensions */,
-				6B637FDB2577F6C400984599 /* RealmHelper.swift */,
+				6B164A7F25780AA700BB3377 /* Helpers */,
 			);
 			path = prize_list;
 			sourceTree = "<group>";
