@@ -65,6 +65,12 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="rd6-eE-0W5"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List is empty, please click &quot;+&quot; to create prizes." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNb-7N-n9Z">
+                                <rect key="frame" x="26" y="419.5" width="362" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxq-Hh-b4q">
                                 <rect key="frame" x="0.0" y="811" width="414" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -79,13 +85,17 @@
                             <constraint firstItem="TXZ-UT-gFU" firstAttribute="top" secondItem="lxq-Hh-b4q" secondAttribute="bottom" id="550-P1-zek"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Me1-HE-f5d" secondAttribute="trailing" id="6OM-F0-zfB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TXZ-UT-gFU" secondAttribute="bottom" id="7Fx-nH-ZSW"/>
+                            <constraint firstItem="bNb-7N-n9Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DB6-iR-U4d"/>
                             <constraint firstItem="lxq-Hh-b4q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gv8-9e-yqa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bNb-7N-n9Z" secondAttribute="trailing" constant="26" id="KFI-aL-Rs5"/>
                             <constraint firstItem="Ikt-lp-fcR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RRK-lv-E58"/>
                             <constraint firstItem="Me1-HE-f5d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TvE-Nr-7qD"/>
+                            <constraint firstItem="bNb-7N-n9Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="V94-hd-o6b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TXZ-UT-gFU" secondAttribute="trailing" constant="16" id="af6-Oh-85m"/>
                             <constraint firstItem="TXZ-UT-gFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gbP-HV-Lna"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lxq-Hh-b4q" secondAttribute="trailing" id="lbd-n6-vPX"/>
                             <constraint firstItem="TXZ-UT-gFU" firstAttribute="top" secondItem="Ikt-lp-fcR" secondAttribute="bottom" constant="4" id="mgu-Hs-Teg"/>
+                            <constraint firstItem="bNb-7N-n9Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o8H-RB-QQj"/>
                             <constraint firstItem="Ikt-lp-fcR" firstAttribute="top" secondItem="Me1-HE-f5d" secondAttribute="bottom" id="oLu-RI-nHk"/>
                             <constraint firstItem="Me1-HE-f5d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zVG-2j-fek"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ikt-lp-fcR" secondAttribute="trailing" constant="26" id="zrM-mi-FPg"/>
@@ -106,6 +116,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emptyStateLabel" destination="bNb-7N-n9Z" id="Ce9-ef-GX7"/>
                         <outlet property="priceLabel" destination="TBL-UU-8RL" id="udD-FG-Ics"/>
                         <outlet property="purchaseLimitLabel" destination="QlH-tJ-RXx" id="1ct-zu-n15"/>
                         <outlet property="tableView" destination="Me1-HE-f5d" id="KOP-RP-lCR"/>

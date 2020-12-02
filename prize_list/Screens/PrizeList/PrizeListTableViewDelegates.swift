@@ -31,6 +31,7 @@ extension PrizeListViewController: UITableViewDelegate {
             RealmHelper.deleteObject(object: object)
             tableView.deleteRows(at: [indexPath], with: .left)
             setTotalPrice()
+            setupEmptyState()
             tableView.endUpdates()
         }
     }

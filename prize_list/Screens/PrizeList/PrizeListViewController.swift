@@ -13,6 +13,7 @@ final class PrizeListViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var priceLabel: UILabel!
     @IBOutlet private weak var purchaseLimitLabel: UILabel!
+    @IBOutlet private weak var emptyStateLabel: UILabel!
     
     //MARK: - Property
     let viewModel = PrizeListViewModel()
@@ -36,6 +37,10 @@ final class PrizeListViewController: UIViewController {
     
     func setTotalPrice() {
         priceLabel.text = viewModel.getTotalPrice()
+    }
+    
+    func setupEmptyState() {
+        emptyStateLabel.isHidden = !viewModel.isEmptyState()
     }
     
     //MARK: - Actions
@@ -66,6 +71,7 @@ final class PrizeListViewController: UIViewController {
 //MARK: CreateNewPrizeProtocol
 extension PrizeListViewController: CreateNewPrizeProtocol {
     func addNewPrize(_ model: Prize) {
+        setupEmptyState()
         tableView.beginUpdates()
         tableView.insertRows(at: [IndexPath.init(row: viewModel.dataArray.count - 1, section: 0)], with: .automatic)
         tableView.endUpdates()

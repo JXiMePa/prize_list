@@ -49,4 +49,8 @@ final class PrizeListViewModel {
         return totalPrice.toDecimalPrice()
     }
     
+    func isEmptyState() -> Bool {
+        return dataArray.isEmpty
+    }
+    
 }
