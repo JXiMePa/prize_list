@@ -3,16 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5023B96A9A3FC6111AB558FA /* Pods_prize_list.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30D646E9504A9BF513950A3 /* Pods_prize_list.framework */; };
+		6B31D02F2577A98100FEEE68 /* PrizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31D02D2577A98100FEEE68 /* PrizeCell.swift */; };
+		6B31D0302577A98100FEEE68 /* PrizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B31D02E2577A98100FEEE68 /* PrizeCell.xib */; };
+		6B31D0352577AC1200FEEE68 /* Prize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31D0342577AC1200FEEE68 /* Prize.swift */; };
+		6B3449562577B3FF00CF523E /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3449552577B3FF00CF523E /* Double+Extensions.swift */; };
+		6B34495B2577BBC000CF523E /* PrizeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B34495A2577BBC000CF523E /* PrizeListViewModel.swift */; };
+		6B36FCE32577E81D005AEB40 /* UIView+XibSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36FCE22577E81D005AEB40 /* UIView+XibSetup.swift */; };
+		6B3893042577ED2D00CB311C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3893032577ED2D00CB311C /* String+Extensions.swift */; };
+		6B3893172577F07400CB311C /* InputField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3893162577F07400CB311C /* InputField.xib */; };
+		6B38931C2577F08500CB311C /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B38931B2577F08500CB311C /* InputField.swift */; };
+		6B637FD72577F38800984599 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B637FD62577F38800984599 /* UITextField+Extensions.swift */; };
+		6B637FDC2577F6C400984599 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B637FDB2577F6C400984599 /* RealmHelper.swift */; };
+		6BDA07B825779E11000E77DA /* PrizeListTableViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA07B725779E11000E77DA /* PrizeListTableViewDelegates.swift */; };
 		6BDA38642577931A00AE21A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA38632577931A00AE21A1 /* AppDelegate.swift */; };
 		6BDA38662577931A00AE21A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA38652577931A00AE21A1 /* SceneDelegate.swift */; };
-		6BDA38682577931A00AE21A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA38672577931A00AE21A1 /* ViewController.swift */; };
+		6BDA38682577931A00AE21A1 /* PrizeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA38672577931A00AE21A1 /* PrizeListViewController.swift */; };
 		6BDA386B2577931A00AE21A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA38692577931A00AE21A1 /* Main.storyboard */; };
 		6BDA386D2577931E00AE21A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA386C2577931E00AE21A1 /* Assets.xcassets */; };
 		6BDA38702577931E00AE21A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA386E2577931E00AE21A1 /* LaunchScreen.storyboard */; };
+		6BDA38AE2577999600AE21A1 /* CreateNewPrize.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA38AD2577999600AE21A1 /* CreateNewPrize.storyboard */; };
+		6BDA38B4257799B300AE21A1 /* CreateNewPrizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA38B3257799B300AE21A1 /* CreateNewPrizeViewController.swift */; };
+		6BDA38BA25779A6500AE21A1 /*  NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA38B925779A6500AE21A1 /*  NSObject+Extensions.swift */; };
+		6BDA38C325779AA000AE21A1 /* Storyboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA38C225779AA000AE21A1 /* Storyboard+Extensions.swift */; };
+		6BDA38C825779AE600AE21A1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA38C725779AE600AE21A1 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +51,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51A0E1FAEF9F184DF0F3BA32 /* Pods-prize_list.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prize_list.release.xcconfig"; path = "Target Support Files/Pods-prize_list/Pods-prize_list.release.xcconfig"; sourceTree = "<group>"; };
+		6B31D02D2577A98100FEEE68 /* PrizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeCell.swift; sourceTree = "<group>"; };
+		6B31D02E2577A98100FEEE68 /* PrizeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrizeCell.xib; sourceTree = "<group>"; };
+		6B31D0342577AC1200FEEE68 /* Prize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prize.swift; sourceTree = "<group>"; };
+		6B3449552577B3FF00CF523E /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		6B34495A2577BBC000CF523E /* PrizeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeListViewModel.swift; sourceTree = "<group>"; };
+		6B36FCE22577E81D005AEB40 /* UIView+XibSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XibSetup.swift"; sourceTree = "<group>"; };
+		6B3893032577ED2D00CB311C /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		6B3893162577F07400CB311C /* InputField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputField.xib; sourceTree = "<group>"; };
+		6B38931B2577F08500CB311C /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		6B637FD62577F38800984599 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		6B637FDB2577F6C400984599 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		6BDA07B725779E11000E77DA /* PrizeListTableViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeListTableViewDelegates.swift; sourceTree = "<group>"; };
 		6BDA38602577931A00AE21A1 /* prize_list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prize_list.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDA38632577931A00AE21A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BDA38652577931A00AE21A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6BDA38672577931A00AE21A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BDA38672577931A00AE21A1 /* PrizeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeListViewController.swift; sourceTree = "<group>"; };
 		6BDA386A2577931A00AE21A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BDA386C2577931E00AE21A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BDA386F2577931E00AE21A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BDA38712577931E00AE21A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BDA38762577931F00AE21A1 /* prize_listTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prize_listTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDA38812577931F00AE21A1 /* prize_listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prize_listUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BDA38AD2577999600AE21A1 /* CreateNewPrize.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateNewPrize.storyboard; sourceTree = "<group>"; };
+		6BDA38B3257799B300AE21A1 /* CreateNewPrizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPrizeViewController.swift; sourceTree = "<group>"; };
+		6BDA38B925779A6500AE21A1 /*  NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		6BDA38C225779AA000AE21A1 /* Storyboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extensions.swift"; sourceTree = "<group>"; };
+		6BDA38C725779AE600AE21A1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		88038281ED5D002451A9FA77 /* Pods-prize_list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prize_list.debug.xcconfig"; path = "Target Support Files/Pods-prize_list/Pods-prize_list.debug.xcconfig"; sourceTree = "<group>"; };
+		E30D646E9504A9BF513950A3 /* Pods_prize_list.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prize_list.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5023B96A9A3FC6111AB558FA /* Pods_prize_list.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,11 +109,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5095AE24F25E3C9A87B75790 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E30D646E9504A9BF513950A3 /* Pods_prize_list.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B31D0392577AC1800FEEE68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B31D0342577AC1200FEEE68 /* Prize.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B36FCF12577E870005AEB40 /* InputField */ = {
+			isa = PBXGroup;
+			children = (
+				6B3893162577F07400CB311C /* InputField.xib */,
+				6B38931B2577F08500CB311C /* InputField.swift */,
+			);
+			path = InputField;
+			sourceTree = "<group>";
+		};
+		6BDA07C325779E69000E77DA /* PrizeCell */ = {
+			isa = PBXGroup;
+			children = (
+				6B31D02D2577A98100FEEE68 /* PrizeCell.swift */,
+				6B31D02E2577A98100FEEE68 /* PrizeCell.xib */,
+			);
+			path = PrizeCell;
+			sourceTree = "<group>";
+		};
 		6BDA38572577931A00AE21A1 = {
 			isa = PBXGroup;
 			children = (
 				6BDA38622577931A00AE21A1 /* prize_list */,
 				6BDA38612577931A00AE21A1 /* Products */,
+				D770B0314FEFADCD4E8999A6 /* Pods */,
+				5095AE24F25E3C9A87B75790 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,13 +168,69 @@
 			children = (
 				6BDA38632577931A00AE21A1 /* AppDelegate.swift */,
 				6BDA38652577931A00AE21A1 /* SceneDelegate.swift */,
-				6BDA38672577931A00AE21A1 /* ViewController.swift */,
+				6B31D0392577AC1800FEEE68 /* Models */,
+				6BDA38AB2577994100AE21A1 /* Screens */,
 				6BDA38692577931A00AE21A1 /* Main.storyboard */,
 				6BDA386C2577931E00AE21A1 /* Assets.xcassets */,
 				6BDA386E2577931E00AE21A1 /* LaunchScreen.storyboard */,
 				6BDA38712577931E00AE21A1 /* Info.plist */,
+				6BDA38BE25779A6900AE21A1 /* Extensions */,
+				6B637FDB2577F6C400984599 /* RealmHelper.swift */,
 			);
 			path = prize_list;
+			sourceTree = "<group>";
+		};
+		6BDA38AB2577994100AE21A1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6BDA38AC2577995200AE21A1 /* PrizeList */,
+				6BDA38B22577999E00AE21A1 /* CreateNewPrize */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6BDA38AC2577995200AE21A1 /* PrizeList */ = {
+			isa = PBXGroup;
+			children = (
+				6B34495A2577BBC000CF523E /* PrizeListViewModel.swift */,
+				6BDA38672577931A00AE21A1 /* PrizeListViewController.swift */,
+				6BDA07B725779E11000E77DA /* PrizeListTableViewDelegates.swift */,
+				6BDA07C325779E69000E77DA /* PrizeCell */,
+			);
+			path = PrizeList;
+			sourceTree = "<group>";
+		};
+		6BDA38B22577999E00AE21A1 /* CreateNewPrize */ = {
+			isa = PBXGroup;
+			children = (
+				6BDA38AD2577999600AE21A1 /* CreateNewPrize.storyboard */,
+				6BDA38B3257799B300AE21A1 /* CreateNewPrizeViewController.swift */,
+				6B36FCF12577E870005AEB40 /* InputField */,
+			);
+			path = CreateNewPrize;
+			sourceTree = "<group>";
+		};
+		6BDA38BE25779A6900AE21A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6BDA38B925779A6500AE21A1 /*  NSObject+Extensions.swift */,
+				6BDA38C225779AA000AE21A1 /* Storyboard+Extensions.swift */,
+				6BDA38C725779AE600AE21A1 /* UIViewController+Extensions.swift */,
+				6B3449552577B3FF00CF523E /* Double+Extensions.swift */,
+				6B36FCE22577E81D005AEB40 /* UIView+XibSetup.swift */,
+				6B3893032577ED2D00CB311C /* String+Extensions.swift */,
+				6B637FD62577F38800984599 /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D770B0314FEFADCD4E8999A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88038281ED5D002451A9FA77 /* Pods-prize_list.debug.xcconfig */,
+				51A0E1FAEF9F184DF0F3BA32 /* Pods-prize_list.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BDA388A2577931F00AE21A1 /* Build configuration list for PBXNativeTarget "prize_list" */;
 			buildPhases = (
+				E26CF52310C7FC39B1EE8358 /* [CP] Check Pods Manifest.lock */,
 				6BDA385C2577931A00AE21A1 /* Sources */,
 				6BDA385D2577931A00AE21A1 /* Frameworks */,
 				6BDA385E2577931A00AE21A1 /* Resources */,
+				2F7FA6B2FE10C39BF7D28817 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,9 +338,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BDA38AE2577999600AE21A1 /* CreateNewPrize.storyboard in Resources */,
+				6B3893172577F07400CB311C /* InputField.xib in Resources */,
 				6BDA38702577931E00AE21A1 /* LaunchScreen.storyboard in Resources */,
 				6BDA386D2577931E00AE21A1 /* Assets.xcassets in Resources */,
 				6BDA386B2577931A00AE21A1 /* Main.storyboard in Resources */,
+				6B31D0302577A98100FEEE68 /* PrizeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,14 +363,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F7FA6B2FE10C39BF7D28817 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-prize_list/Pods-prize_list-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-prize_list/Pods-prize_list-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-prize_list/Pods-prize_list-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E26CF52310C7FC39B1EE8358 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-prize_list-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6BDA385C2577931A00AE21A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BDA38682577931A00AE21A1 /* ViewController.swift in Sources */,
+				6B31D02F2577A98100FEEE68 /* PrizeCell.swift in Sources */,
+				6BDA38C325779AA000AE21A1 /* Storyboard+Extensions.swift in Sources */,
+				6BDA07B825779E11000E77DA /* PrizeListTableViewDelegates.swift in Sources */,
+				6BDA38B4257799B300AE21A1 /* CreateNewPrizeViewController.swift in Sources */,
+				6BDA38682577931A00AE21A1 /* PrizeListViewController.swift in Sources */,
+				6BDA38C825779AE600AE21A1 /* UIViewController+Extensions.swift in Sources */,
+				6B31D0352577AC1200FEEE68 /* Prize.swift in Sources */,
 				6BDA38642577931A00AE21A1 /* AppDelegate.swift in Sources */,
+				6B38931C2577F08500CB311C /* InputField.swift in Sources */,
+				6B637FD72577F38800984599 /* UITextField+Extensions.swift in Sources */,
+				6BDA38BA25779A6500AE21A1 /*  NSObject+Extensions.swift in Sources */,
+				6B3893042577ED2D00CB311C /* String+Extensions.swift in Sources */,
+				6B34495B2577BBC000CF523E /* PrizeListViewModel.swift in Sources */,
+				6B3449562577B3FF00CF523E /* Double+Extensions.swift in Sources */,
+				6B36FCE32577E81D005AEB40 /* UIView+XibSetup.swift in Sources */,
 				6BDA38662577931A00AE21A1 /* SceneDelegate.swift in Sources */,
+				6B637FDC2577F6C400984599 /* RealmHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +597,7 @@
 		};
 		6BDA388B2577931F00AE21A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88038281ED5D002451A9FA77 /* Pods-prize_list.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -425,6 +618,7 @@
 		};
 		6BDA388C2577931F00AE21A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A0E1FAEF9F184DF0F3BA32 /* Pods-prize_list.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
