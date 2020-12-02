@@ -13,8 +13,6 @@
 		6BDA386B2577931A00AE21A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA38692577931A00AE21A1 /* Main.storyboard */; };
 		6BDA386D2577931E00AE21A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA386C2577931E00AE21A1 /* Assets.xcassets */; };
 		6BDA38702577931E00AE21A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA386E2577931E00AE21A1 /* LaunchScreen.storyboard */; };
-		6BDA387B2577931F00AE21A1 /* prize_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA387A2577931F00AE21A1 /* prize_listTests.swift */; };
-		6BDA38862577931F00AE21A1 /* prize_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA38852577931F00AE21A1 /* prize_listUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +42,7 @@
 		6BDA386F2577931E00AE21A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BDA38712577931E00AE21A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BDA38762577931F00AE21A1 /* prize_listTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prize_listTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BDA387A2577931F00AE21A1 /* prize_listTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prize_listTests.swift; sourceTree = "<group>"; };
-		6BDA387C2577931F00AE21A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BDA38812577931F00AE21A1 /* prize_listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prize_listUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BDA38852577931F00AE21A1 /* prize_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prize_listUITests.swift; sourceTree = "<group>"; };
-		6BDA38872577931F00AE21A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				6BDA38622577931A00AE21A1 /* prize_list */,
-				6BDA38792577931F00AE21A1 /* prize_listTests */,
-				6BDA38842577931F00AE21A1 /* prize_listUITests */,
 				6BDA38612577931A00AE21A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,24 +100,6 @@
 				6BDA38712577931E00AE21A1 /* Info.plist */,
 			);
 			path = prize_list;
-			sourceTree = "<group>";
-		};
-		6BDA38792577931F00AE21A1 /* prize_listTests */ = {
-			isa = PBXGroup;
-			children = (
-				6BDA387A2577931F00AE21A1 /* prize_listTests.swift */,
-				6BDA387C2577931F00AE21A1 /* Info.plist */,
-			);
-			path = prize_listTests;
-			sourceTree = "<group>";
-		};
-		6BDA38842577931F00AE21A1 /* prize_listUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6BDA38852577931F00AE21A1 /* prize_listUITests.swift */,
-				6BDA38872577931F00AE21A1 /* Info.plist */,
-			);
-			path = prize_listUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BDA387B2577931F00AE21A1 /* prize_listTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BDA38862577931F00AE21A1 /* prize_listUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,6 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GAD7P6B8PH;
 				INFOPLIST_FILE = prize_list/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GAD7P6B8PH;
 				INFOPLIST_FILE = prize_list/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
