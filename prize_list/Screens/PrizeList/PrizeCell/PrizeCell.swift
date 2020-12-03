@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIKit
-
 final class PrizeCell: UITableViewCell {
     
     //MARK: - IBOutlets
@@ -16,11 +14,7 @@ final class PrizeCell: UITableViewCell {
     @IBOutlet private weak var costLabel: UILabel!
     @IBOutlet private weak var checkmark: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
+    //MARK: - Cell reuse
     override func prepareForReuse() {
         super.prepareForReuse()
         nameLabel.text = ""

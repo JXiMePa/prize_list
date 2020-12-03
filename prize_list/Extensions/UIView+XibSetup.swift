@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIView {
-    
     func xibSetup() {
         let view = loadFromNib()
         view.translatesAutoresizingMaskIntoConstraints = false

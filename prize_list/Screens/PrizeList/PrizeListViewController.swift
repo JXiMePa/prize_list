@@ -24,6 +24,7 @@ final class PrizeListViewController: UIViewController {
         registerTableViewCell()
         setTotalPrice()
         setPurchaseLimit()
+        setupEmptyState()
     }
     
     //MARK: - Func
@@ -63,6 +64,11 @@ final class PrizeListViewController: UIViewController {
                   let self = self else { return }
             self.viewModel.purchaseLimit = price
             self.setPurchaseLimit()
+            self.setTotalPrice()
+            guard let visibleIndexPaths = self.tableView.indexPathsForVisibleRows else {
+                return
+            }
+            self.tableView.reloadRows(at: visibleIndexPaths, with: .none)
         }))
         self.present(alert, animated: true, completion: nil)
     }

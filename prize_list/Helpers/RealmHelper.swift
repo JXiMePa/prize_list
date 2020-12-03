@@ -17,18 +17,18 @@ class RealmHelper {
         }
     }
     
-    static func getObjects<T:Object>()->[T] {
+    static func getObjects<T:Object>() -> [T] {
         let realm = try! Realm()
         let realmResults = realm.objects(T.self).sorted(byKeyPath: "createdAt", ascending: true)
         return Array(realmResults)
-
+        
     }
     
-    static func getObjects<T:Object>(filter:String)->[T] {
+    static func getObjects<T:Object>(filter: String) -> [T] {
         let realm = try! Realm()
         let realmResults = realm.objects(T.self).filter(filter)
         return Array(realmResults)
-
+        
     }
     
     static func deleteObject<T:Object>(object: T) {

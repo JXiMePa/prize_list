@@ -9,6 +9,6 @@ import Foundation
 
 extension Double {
     func toDecimalPrice(_ currency: String = "$") -> String {
-       return currency + " " + String(format: "%.2f", self)
+        return currency + " " + String(format: "%.2f", self)
     }
 }
